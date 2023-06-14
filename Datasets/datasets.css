@@ -1,0 +1,131 @@
+
+.datasets__container {
+    display: flex;   
+    flex-direction: column;
+    /* justify-content: stretch;
+    align-items: stretch; */
+    background:white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.datasetsname {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #000000;
+    margin-top: 140px;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+.datasets {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 60px 100px 100px 100px;
+}
+.datasets__holder {
+    display: flex;
+    gap: 100px;    
+}
+
+.datasetsholder__text {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+}
+.dataset__info {
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: justified;
+}
+.dataset__image {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    
+}
+@media screen and (max-width: 1480px) {
+    .datasets {
+        padding: 0px;
+    }
+    .datasets__holder {
+        gap: 60px;
+    }
+    .dataset__image {
+        width: 200px;
+        height: 200px; 
+    }
+    .datasetsname {
+        margin-top: 40px;
+        font-size: 30px;
+        margin-left: 120px;
+    }
+    .datasetsholder__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .dataset__info {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .dataset__image {
+        width: 150px;
+        height: 150px; 
+    }
+    .datasetsholder__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .dataset__info {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .datasets__container{
+            padding: 0px;
+        }
+        .datasets{
+            padding: 0px; 
+            gap: 40px;
+        }
+        .datasetsname {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-left: 30px;
+            line-height: 25px;
+        }
+        .datasets__holder {
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+            gap: 10px;
+            padding: 0px 0px 0px 20px
+        }
+        .dataset__info {
+            display: none;
+        }
+        .datasetsholder__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .dataset__image {
+            width: 150px;
+            height: 150px;
+        }
+}
+
+@media screen and (max-width: 440px) {
+    
+}

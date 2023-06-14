@@ -1,0 +1,245 @@
+.page__header {
+    background: white;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    border-radius: 20px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    /* width: 200px; */
+}
+.header__button {
+    /* display: flex;
+    flex-direction: column; */
+    width: 220px;
+    height: 80px;
+    padding-left: 10px;
+
+    /* width: 80px;
+    height: 5px; */
+  /*   border:1px solid #000; */
+    position: relative;
+}
+
+.header__button::after {
+    content:'';
+    width: 0;
+    height: 4px;
+    background: #155F86;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /* display: block; */
+    transition:1s;
+    transform: translate(-50%, 100%);
+}
+.header__button:hover::after {
+    width: 100%;
+}
+.button__text {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    /* transform: translate(-100%,-50%); */
+    text-align: center;
+    font-family: 'Montserrat';
+    /* font-style: bold; */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 17px;
+    color: black;
+}
+
+
+.header__details {
+    width: 220px;
+    height: 50px;
+    
+}
+.header__logo {
+    height: 80px;
+    width: 89px;
+    overflow: hidden;
+}
+.logo__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .header__button_elneiro {
+
+}
+.header__button_projects {
+
+}
+.header__button_team {
+
+}     
+.header__button_investors {
+
+} */
+.header__icon {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    visibility: hidden;
+}
+.icon__img {
+    position: absolute;
+    transform: translate(20%, 40%);
+}
+/* .header__button_contacts {
+
+} */
+
+.page__mobileheader {
+    display: none;
+    height: 50px;
+    
+}
+.mobile__bar {
+    z-index: 2;
+}
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #554e4f;
+   
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+#bar1 {
+    transform: translateY(-4px);
+  }
+  
+#bar3 {
+    transform: translateY(4px);
+  }
+
+.mobile__navigation {
+    transition: 0.3s ease;
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+.nav__list{
+    padding: 0 22px;
+
+}
+.list__item {
+    list-style: none;
+    padding: 12px 0;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 90px 0 270px 120px;
+    background: radial-gradient(circle, #554e4f, #6c6567);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    opacity: 80%;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+    z-index: 5;
+    position: relative;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+    /* opacity: 70%; */
+  }
+@media screen and (max-width: 1480px) {
+  .header__button {
+    width: 150px;
+    height: 60px;
+  }
+  .button__text {
+    font-size: 18px;
+  }
+  .page__header {
+    padding: 0px;
+  }
+  .header__icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__button {
+    width: 70px;
+    height: 40px;
+    padding-left: 0px;
+  }
+  .button__text {
+    font-size: 12px;
+  }
+  .page__header {
+    padding: 0px;
+  }
+  .header__icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+ .page__header {
+        display: none;
+    }
+    .page__mobileheader {
+        display: block;
+    }
+}
+@media screen and (max-width: 440px) {
+  .page__header {
+    display: none;
+  }
+  .page__mobileheader {
+    display: block;
+  }
+ 
+}

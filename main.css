@@ -1,0 +1,101 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('./header/header.css');
+  @import url('./mainPage/mainPage.css');
+  @import url('./Information/Information.css');
+  @import url('./Projects/projects.css');
+  @import url('./CRYO/cryo.css');
+  @import url('./ElneiroProject/elneiro.css');
+  @import url('./Recompositor/recompositor.css');
+  @import url('./Datasets/datasets.css');
+  @import url('./Team/team.css');
+  @import url('./Team/team2.css');
+  @import url('./Contacts/contacts.css');
+
+body {
+    margin: 0px;
+}
+.root {
+    --background-colorfirst: #98A2B3;
+    --background-colorsecond: #F5F5F5;
+    --text-color: #000000;
+    --button-color: #155F86;
+    --button-coloractive: #CFAB57;
+    --button-text: #FFFFFF;
+    --button-textactive: #000000;
+    
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgba(245, 245, 245, 1);
+    gap: 20px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* height: 100vh; */
+   
+    gap: 11px;
+    background:white;
+    border-radius: 20px;
+    padding: 50px 50px 150px 50px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.page__container {
+    display: flex;   
+    flex-direction: column;
+}
+.page__container_light{
+    background:  white;
+} 
+.container__footer {
+    /* padding: 45px 360px 45px 350px; */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* background: white; */
+    text-align: center;
+    padding: 50px 300px 25px 300px;
+}
+
+
+.btnUp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #155F86;
+    text-align: center;
+    padding-top: 5px;
+    place-self: flex-end;
+    position: fixed;
+    right: 40px;
+    bottom: 0px;
+    z-index: 1000;
+    display: none;
+}
+.btnUp:hover {
+    background-color: #577a8e;
+}
+.btn-up_show {
+    display: none;
+}
+@media screen and (max-width: 440px) {
+    .page {
+        padding: 20px 0px 80px 0px;
+    }
+    
+    .btn-up_show {
+        display: block;
+    }
+    
+}

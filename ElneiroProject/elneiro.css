@@ -1,0 +1,67 @@
+.elneiro {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 60px 0px 60px;
+    gap: 20px;
+}
+.elneiro__imginfo {
+    display: flex;
+    gap: 50px;
+
+}
+.imginfo__imageholder {
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+}
+.imageholder__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.imginfo__text {
+    display: flex;
+    flex-direction: column;
+}
+.text__name {
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+}
+.text__info {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+}
+.informationElneiro__text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.elneiro__holder {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 50px;
+}
+.elneiro__video {
+    width: 500px;
+    height: 400px;
+}
+
+.elneiro_info {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px; 
+}
+.videoelneiro__link {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px; 
+}
